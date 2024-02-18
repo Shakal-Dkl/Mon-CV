@@ -1,5 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @font-face {
   font-family: "raleway";
-  src: url(../fonts/Raleway.ttf);
+  src: url(../fonts/Raleway.ttf) format("truetype");
 }
+body {
+  /* resoudre le probleme des marge centré */
+  font-family: "raleway";
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+}
+header {
+  width: 1160px;
+  background-color: #782221;
+  text-align: center;
+  color: white;
+}
+.photo {
+  width: 200px;
+  height: 200px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c1d27;
+  align-items: center;
+  padding: 0 2rem;
+}
+nav a {
+  /* ne pas oublier les effects sur les liens */
+  text-decoration: none;
+  color: white;
+}
+
+/* Mise en poage de main */
