@@ -3,12 +3,17 @@
   font-family: "raleway";
   src: url(../fonts/Raleway.ttf) format("truetype");
 }
+
 body {
   /* resoudre le probleme des marge centré */
   font-family: "raleway";
   display: flex;
   flex-direction: column;
   width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 header {
   width: 1160px;
@@ -16,10 +21,22 @@ header {
   text-align: center;
   color: white;
 }
-.photo {
-  width: 200px;
-  height: 200px;
+header p {
+  font-weight: 600;
 }
+.photo {
+  cursor: zoom-in;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  box-shadow: -1px -1px 20px 20px rgba(0, 0, 0, 0.671);
+  margin-top: 20px;
+}
+h1 {
+  font-family: "lato";
+  text-transform: uppercase;
+}
+
 header nav {
   display: flex;
   height: 70px;
@@ -32,6 +49,9 @@ nav a {
   /* ne pas oublier les effects sur les liens */
   text-decoration: none;
   color: white;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* Mise en poage de main */
@@ -52,6 +72,7 @@ main {
   color: white;
   text-align: justify;
   margin-left: 1rem;
+  text-indent: 30px;
 }
 .gauche ul {
   color: white;
@@ -72,6 +93,9 @@ main {
   padding-left: 1rem;
   width: 750px;
 }
+.droite h2:hover {
+  text-decoration: underline 2px #782221;
+}
 footer {
   background-color: #782221;
 }
@@ -90,4 +114,7 @@ footer p {
 .logo_rs img {
   width: 50px;
   height: 50px;
+}
+.logo_rs img:hover {
+  opacity: 0.3;
 }
